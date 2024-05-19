@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import TNW from "../assets/tnw-logo.svg";
+import Google from "../assets/google-logo.svg";
+import Nike from "../assets/nike-logo.svg";
+import Airbnb from "../assets/airbnb-logo.svg";
+import AfricaNews from "../assets/africaNews-logo.svg";
+---
+
+<section id="case-studies" class="bg-light px-3" style="padding-top:6rem; padding-bottom: 2rem;">
+  <h6 class="text-center mb-0 fw-semibold text-secondary text-opacity-75" style="font-size: 0.6rem;letter-spacing: 1px;">CLIENTS WE WORKED WITH</h6>
+  <ul class="list-unstyled d-flex justify-content-center mx-auto mb-0 flex-wrap column-gap-5 justify-content-lg-between" style="max-width: 1100px;">
+    <li>
+      <Image src={TNW} width={150} height={150} alt="tnw logo" />
+    </li>
+    <li>
+      <Image src={Google} width={150} height={150} alt="google logo" />
+    </li>
+    <li>
+      <Image src={Nike} width={150} height={150} alt="nike logo" />
+    </li>
+    <li>
+      <Image src={Airbnb} width={150} height={150} alt="airbnb logo" />
+    </li>
+    <li>
+      <Image src={AfricaNews} width={150} height={150} alt="africanews logo" />
+    </li>
+  </ul>
+</section>

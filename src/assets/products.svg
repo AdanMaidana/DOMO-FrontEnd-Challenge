@@ -1,0 +1,31 @@
+<svg width="64px" height="64px" viewBox="-12 -12 48.00 48.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0">
+
+<rect x="-12" y="-12" width="48.00" height="48.00" rx="24" fill="#3871ff" strokewidth="0"/>
+
+</g>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier">
+
+<defs>
+
+<style>.cls-1{fill:none;stroke:#ffffff;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+
+</defs>
+
+<polygon class="cls-1" points="16.77 8.18 16.77 22.5 3.41 22.5 3.41 5.32 16.77 5.32 16.77 8.18"/>
+
+<line class="cls-1" x1="6.27" y1="13.91" x2="13.91" y2="13.91"/>
+
+<line class="cls-1" x1="6.27" y1="10.09" x2="13.91" y2="10.09"/>
+
+<line class="cls-1" x1="6.27" y1="17.73" x2="12" y2="17.73"/>
+
+<polyline class="cls-1" points="20.59 19.64 20.59 4.36 20.59 1.5 6.27 1.5"/>
+
+</g>
+
+</svg>

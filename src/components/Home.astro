@@ -1,0 +1,108 @@
+---
+import Navbar from "./Navbar.astro";
+---
+
+<section
+  id="home"
+  class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center px-3"
+>
+  <Navbar />
+
+  <main
+    class="w-100 d-flex flex-column align-items-start"
+    style="max-width: 1100px;"
+  >
+    <h1 class="text-light fw-bold mb-3" style="max-width: 600px;">
+      We build beautiful and reliable web solutions
+    </h1>
+    <p
+      class="text-white opacity-50 fw-medium"
+    >
+      We strongly believe that communication, trust and transparency are the
+      essential elements of successful business relationship.<br/> Ready for the
+      journey?
+    </p>
+    <div class="d-flex w-100 column-gap-3 mt-3">
+      <a
+        class="home-button fw-semibold text-center w-max-fit"
+        >Learn more</a
+      >
+      <a
+        class="home-button fw-semibold text-center text-light w-max-fit"
+        >Our Projects
+        <svg
+          version="1.1"
+          fill="#fff"
+          id="Layer_1"
+          width="16px"
+          class="ms-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 330 330"
+          xml:space="preserve"
+          data-astro-cid-j7pv25f6=""
+          ><g id="SVGRepo_bgCarrier" stroke-width="0" data-astro-cid-j7pv25f6=""
+          ></g><g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-astro-cid-j7pv25f6=""></g><g
+            id="SVGRepo_iconCarrier"
+            data-astro-cid-j7pv25f6=""
+          >
+            <path
+              id="XMLID_27_"
+              d="M15,170h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,170,15,170z"
+              data-astro-cid-j7pv25f6=""></path>
+          </g></svg
+        >
+      </a>
+    </div>
+  </main>
+</section>
+
+<style>
+  #home {
+    background-image: url(../assets/background-home.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #home p {
+    max-width: 650px;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    text-wrap: pretty;
+    line-height: 2rem;
+  }
+
+  .home-button {
+    font-size: .9rem;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    background-color: var(--bg);
+    color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    text-decoration: none;
+    transition: color .3s, background .3s, border .3s;
+  }
+
+  #home a:first-child:hover {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    color: #fff;
+    text-emphasis-color: 1;
+    cursor: pointer;
+  }
+
+  .home-button:nth-child(2) {
+    cursor: pointer;
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+  }
+
+  .home-button:nth-child(2):hover {
+    background-color: #2b54bb;
+    border-color: var(--light-gray);
+  }
+</style>

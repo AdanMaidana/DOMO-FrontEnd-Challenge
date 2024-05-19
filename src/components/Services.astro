@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import Products from "../assets/products.svg";
+import Responsive from "../assets/responsive.svg";
+import Design from "../assets/design.svg";
+---
+
+<section
+  id="services"
+  class="container-fluid d-flex flex-column justify-content-center align-items-center px-3"
+>
+  <h2 class="text-light">Our Services</h2>
+  <p
+    class="text-white opacity-50 fw-semibold text-center mb-5"
+    style="max-width: 675px; font-size: 1.1rem;"
+  >
+    We feel very strong about our skills when it comes to planning, designing
+    and coding applications. Here is what we love to do!
+  </p>
+  <ul
+  style="max-width: 1100px;"
+    class="list-unstyled d-flex flex-column flex-xl-row p-0 mx-auto row-gap-4 column-gap-4"
+  >
+    <li
+      class="bg-light rounded-1 d-flex flex-column justify-content-center align-items-center row-gap-3 text-center col-12 col-md-6 px-4"
+      style="width:100%; max-width:350px; height: 400px;"
+    >
+      <Image src={Products} alt="svg" width="60" height="60" loading="lazy"/>
+      <h3 class="fs-6 fw-semibold mb-0">Business & Product Concept</h3>
+      <p class="services-description lh-lg mb-0">
+        Analyse business and product concepts at Start-up Workshops or Ongoing
+        Projects' Audits and prepare a viable and sensible product roadmap for
+        achieving a perfect market fit.
+      </p>
+      <a href="" class="services-button fw-semibold text-center w-max-fit mt-2">Learn More</a>
+    </li>
+    <li
+      class="bg-light rounded-1 d-flex flex-column justify-content-center align-items-center row-gap-3 text-center col-12 col-md-6 px-4"
+      style="width:100%; max-width:350px; height: 400px;"
+    >
+      <Image src={Responsive} alt="svg" width="60" height="60" loading="lazy" />
+      <h3 class="fs-6 fw-semibold mb-0">Web & Mobile Development</h3>
+      <p class="services-description lh-lg mb-0">
+        Plan, develop and test high-quality web-applications using AngularJS,
+        NodeJS, JavaScript, Typescript, HTML5 and SASS/CSS3 frameworks and
+        native mobile languages.
+      </p>
+      <a href="" class="services-button fw-semibold text-center w-max-fit mt-2">Learn More</a>
+    </li>
+    <li
+      class="bg-light rounded-1 d-flex flex-column justify-content-center align-items-center row-gap-3 text-center col-12 col-md-5 px-4"
+      style="width:100%; max-width:350px; height: 400px;"
+    >
+      <Image src={Design} alt="svg" width="60" height="60" loading="lazy" />
+      <h3 class="fs-6 fw-semibold mb-0">UX & UI Design</h3>
+      <p class="services-description lh-lg mb-0">
+        Sketch information architecture and simple mock-ups, convert them into
+        clickable prototypes and finish with usable interface designs to deliver
+        a good and reliable user experience.
+      </p>
+      <a href="" class="services-button fw-semibold text-center w-max-fit mt-2">Learn More</a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  #services {
+    background: linear-gradient(transparent 95%, var(--light-blue) 95%);
+  }
+
+  @media (min-width: 1200px) {
+    #services {
+      background: linear-gradient(transparent 87%, var(--light-blue) 87%);
+    }
+  }
+
+  .services-description {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #838383;
+  }
+
+  .services-button {
+    font-size: .8rem;
+    padding: .5rem 2rem;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #838383;
+    border: 2px solid #83838360;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+  #services a:hover {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    color: #fff;
+    text-emphasis-color: 1;
+    cursor: pointer;
+  }
+</style>

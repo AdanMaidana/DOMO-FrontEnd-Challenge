@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import Phone from "../assets/phone.avif";
+---
+
+<section id="hire-us" class="px-3">
+  <main
+    class="d-flex flex-column flex-xl-row justify-content-xl-between flex-wrap row-gap-4 mx-auto"
+    style="max-width: 1100px;"
+  >
+    <div
+      class="card col-12 col-xl-6 px-4 text-light mx-auto mx-xl-0"
+      style="max-width: 540px;"
+    >
+      <h3 class="mb-3">Get in touch with us</h3>
+      <p class="text-opacity-75 text-white mb-4" style="max-width: 300px;">
+        Maecenas sed diam eget risus varius blandit sit amet non magna.
+      </p>
+      <a href="">Hire us</a>
+    </div>
+    <div
+      class="card col-12 col-xl-6 px-4 text-light mx-auto mx-xl-0 position-relative overflow-hidden"
+      style="max-width: 540px;"
+    >
+      <h3 class="mb-3">Our Projects</h3>
+      <p class="text-opacity-75 text-white mb-4" style="max-width: 300px;">
+        Maecenas sed diam eget risus varius blandit sit amet non magna.
+      </p>
+      <a href="">See Projects</a>
+      <Image src={Phone} alt="phone app" />
+    </div>
+  </main>
+</section>
+
+<style>
+  #hire-us {
+    background: linear-gradient(#f8f9fa 90%, var(--bg) 90%);
+    margin-top: -1px;
+  }
+
+  .card {
+    background-color: var(--light-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card a {
+    color: #fff;
+    width: max-content;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+    background-color: var(--light-blue);
+    border: 1px solid #ffffffdc;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .card a:hover {
+    color: var(--light-blue);
+    background-color: #fff;
+  }
+
+  .card img {
+    display: none;
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    width: 100px;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: 400px) {
+    .card img {
+      display: block;
+    }
+  }
+
+  @media (min-width: 450px) {
+    .card img {
+      display: block;
+      right: 0;
+      width: 110px;
+    }
+  }
+
+  @media (min-width: 525px) {
+    .card img {
+      display: block;
+      right: 0;
+      transform: translateY(-27%);
+      width: 200px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #hire-us {
+    background: linear-gradient(#f8f9fa 75%, var(--bg) 75%);
+  }
+  }
+</style>
